@@ -136,12 +136,12 @@ export const PROJECTS = [
     link: "https://av-ecommerce-client.onrender.com/",
   },
   {
-    title: "Cric Score",
+    title: "Cric Live",
     image: cricscore,
     description: `Get Live Cricket Scores, Scorecard, Schedules of International and Domestic cricket matches
        along with Latest News, Videos and ICC Cricket Rankings of different nations and their players`,
     technologies: ["HTML", "CSS", "Javascript", "React", "Redux", "Ant Design"],
-    link: "https://av-ecommerce-client.onrender.com/",
+    link: "",
   },
   {
     title: "Task Management App",
@@ -149,6 +149,6 @@ export const PROJECTS = [
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
     technologies: ["HTML", "CSS", "Javascript", "React", "Ant Design"],
-    link: "https://av-ecommerce-client.onrender.com/",
+    link: "https://ajay-react-apps.onrender.com/cricket",
   },
 ];
