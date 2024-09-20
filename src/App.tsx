@@ -22,18 +22,6 @@ const dividerStyle = {
   margin: "5rem 0",
 };
 export default function PrimarySearchAppBar() {
-  const onButtonClick = () => {
-    const pdfUrl =
-      "https://drive.google.com/file/d/17CbL820-gIjUBon2EGoP7deHT2_Oyivr/view";
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "Resume"; // specify the filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    window.URL.revokeObjectURL(pdfUrl);
-  };
-
   return (
     <>
       <AppBar
