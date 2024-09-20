@@ -11,9 +11,10 @@ import About from "./components/About";
 import Technologies from "./components/Technologies";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
-import { Divider, Grid } from "@mui/material";
+import { Button, Divider, Grid, Tooltip } from "@mui/material";
 import { FaMedium } from "react-icons/fa6";
 import Contact from "./components/Contact";
+import FileDownloadIcon from "@mui/icons-material/FileDownload";
 
 const dividerStyle = {
   width: "100%",
@@ -21,6 +22,18 @@ const dividerStyle = {
   margin: "5rem 0",
 };
 export default function PrimarySearchAppBar() {
+  const onButtonClick = () => {
+    const pdfUrl =
+      "https://drive.google.com/file/d/17CbL820-gIjUBon2EGoP7deHT2_Oyivr/view";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Resume"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(pdfUrl);
+  };
+
   return (
     <>
       <AppBar
@@ -46,6 +59,17 @@ export default function PrimarySearchAppBar() {
 
             <Grid item xs={6} style={{ textAlign: "right" }}>
               <Box>
+                <Tooltip title="Download Resume">
+                  <Button
+                    // onClick={onButtonClick}
+                    startIcon={<FileDownloadIcon />}
+                    href="https://drive.google.com/file/d/17CbL820-gIjUBon2EGoP7deHT2_Oyivr/view"
+                    target="_blank"
+                  >
+                    Resume
+                  </Button>
+                </Tooltip>
+
                 <IconButton
                   size="large"
                   color="inherit"

@@ -1,12 +1,12 @@
 import allstate from "../assets/projects/allstate.png";
 import copernicus from "../assets/projects/copernicus.png";
 import ecommerce from "../assets/projects/e-commerce.png";
-import project4 from "../assets/projects/project-4.jpg";
 import cricscore from "../assets/projects/cricket.png";
+import taskManagement from "../assets/task_management.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting
  robust and scalable web applications. With 8 years of hands-on experience, I have honed my 
- skills in front-end technologies like React, as well as back-end technologies like Node.js,
+ skills in front-end technologies like Javascript , React, Next Js as well as back-end technologies like Node.js,
   MySQL, Nest js , Express Js, and MongoDB. My goal is to leverage my expertise to create innovative 
   solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -16,8 +16,7 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
  and MongoDB. My journey in web development began with a deep curiosity for how things work, 
  and it has evolved into a career where I continuously strive to learn and adapt to new challenges. 
  I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality
-  solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing
-   to open-source projects.`;
+  solutions. Outside of coding, I enjoy staying active, exploring new technologies and doing some poc's.`;
 
 export const EXPERIENCES = [
   {
@@ -43,7 +42,7 @@ and back-end systems.Designed efficient database schemas to store data from the 
   },
   {
     year: "2019 - 2021",
-    role: "Frontend Developer",
+    role: "Fullsatck Developer",
     company: "Blueyonder",
     description: `Designed and developed user interfaces for web applications using  and React.
      Worked closely with backend developers to integrate frontend components with Node.js APIs. 
@@ -83,6 +82,26 @@ or operating systems`,
 
 export const PROJECTS = [
   {
+    title: "Value Explorer",
+    image: copernicus,
+    description: `This project is about development of GTM(Go to Market) portal which enables to
+combine value based selling, democratizing AI/ML based data Analytical and insights, industry
+based workflows and automated RFP responses which solves the problems of bringing scale to
+sales process, all front lines in BlueYonder having quick access to value, opportunity, and their Peer
+analysis, convert raw data to meaningful insights, quick access to industry use-cases.`,
+    technologies: [
+      "HTML",
+      "CSS",
+      "React.js",
+      "Express",
+      "Nest Js",
+      "Azure Function Apps",
+      "MySQL",
+      "Redux - Saga",
+    ],
+    link: "https://bylumuiportalpltna.azureedge.net/home/",
+  },
+  {
     title: "All State",
     image: allstate,
     description: `This project enables allstate's agents to complete insurance transaction behalf of user's depending upon their need.
@@ -98,32 +117,12 @@ export const PROJECTS = [
     ],
     link: "https://www.allstate.com/",
   },
-  {
-    title: "Value Explorer",
-    image: copernicus,
-    description: `This project enables Customer Executives, Business Development, Pre-sales and partners for all Go
-          To Market (GTM) opportunities
-          It enables to combine value based selling, democratizing AI/ML based data Analytical and insights,
-          industry based workflows and automated RFP responses which solves the problems of bringing
-          scale to Sales process, all front lines in BY having quick access to value, opportunity, and their
-          Peer analysis, convert raw data to meaningful insights, quick access to industry use-cases`,
-    technologies: [
-      "HTML",
-      "CSS",
-      "React.js",
-      "Express",
-      "Nest Js",
-      "Azure Function Apps",
-      "MySQL",
-      "Redux - Saga",
-    ],
-    link: "https://bylumuiportalpltna.azureedge.net/home/",
-  },
+
   {
     title: "E-Commerce Website",
     image: ecommerce,
-    description: `A fully functional e-commerce website with features like Products listing, Shopping cart, Checkout and user authentication
-       and Admin Dashboard for managing all the products information and their categories and Orders placed by users`,
+    description: `A fully functional e-commerce website with features like Products listing, Shopping cart, Checkout and User authentication
+       and Admin Dashboard for managing all the products information and their categories and Orders placed by users.`,
     technologies: [
       "HTML",
       "CSS",
@@ -139,16 +138,16 @@ export const PROJECTS = [
     title: "Cric Live",
     image: cricscore,
     description: `Get Live Cricket Scores, Scorecard, Schedules of International and Domestic cricket matches
-       along with Latest News, Videos and ICC Cricket Rankings of different nations and their players`,
-    technologies: ["HTML", "CSS", "Javascript", "React", "Redux", "Ant Design"],
+       along with Latest ICC Cricket Rankings of different nations and their players`,
+    technologies: ["HTML", "CSS", "Javascript", "React", "Material UI"],
     link: "https://ajay-react-apps.onrender.com/cricket",
   },
   {
     title: "Task Management App",
-    image: project4,
+    image: taskManagement,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Javascript", "React", "Ant Design"],
-    link: "",
+    technologies: ["HTML", "CSS", "Javascript", "React", "Material UI"],
+    link: "https://todo-list-4axj.onrender.com",
   },
 ];
